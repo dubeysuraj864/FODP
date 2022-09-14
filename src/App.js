@@ -1,14 +1,13 @@
-import logo from './logo.png';
-import './App.sass';
+import './App.scss';
 import Navbar from './Components/Navbar';
+import Header from './Components/Header';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <img src={logo} alt="football" width={200} />
-
-    </div>
+      <Header />
+      </div>
   );
 }
 

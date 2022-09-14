@@ -1,0 +1,27 @@
+@import "colors.scss";
+
+@mixin flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin outline {
+  border: none;
+  outline: none;
+  background-color: $whiteTrans;
+  padding: 10px 30px;
+  margin: 5px;
+  cursor: pointer;
+  select{
+    background: rgba(245, 245, 245, 0.171);
+  }
+  option{
+    color: gray;
+    background: rgba(245, 245, 245, 0.192);
+ }
+}
+
+@mixin box-shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}

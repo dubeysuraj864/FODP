@@ -1,0 +1,16 @@
+@import "toolkit.scss";
+
+.header{
+    @include flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $textWhite;
+    background: #ef6191;
+    a{
+        text-decoration: none;
+        color: $textWhite;
+    }
+}
