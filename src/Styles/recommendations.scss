@@ -1,0 +1,8 @@
+@import "toolkit.scss";
+
+.recomm{
+    margin-top: 20px;
+    @include flex;
+    .card{
+    }
+}

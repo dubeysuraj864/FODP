@@ -2,11 +2,12 @@
 
 @mixin flex {
   display: flex;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
 }
 
 @mixin outline {
+  text-align: left;
   border: none;
   outline: none;
   background-color: $whiteTrans;

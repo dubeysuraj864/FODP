@@ -17,6 +17,13 @@ function Header() {
            <a href="//">Table tennis</a>
            <a href="//">Badminton</a>
         </div>
+        <div className="cover">
+        
+         <div className="text">
+            Are you looking for a partner or team members, whom you can play with? <br />
+            FODP is the right place, You should find'em here.
+         </div>
+        </div>
         </>
      );
 }

@@ -1,57 +1,59 @@
 @import "toolkit.scss";
 @import "colors.scss";
 
-.main{
+.main {
+  @include flex;
+  background: $backColor1;
+  color: $textWhite;
+  padding: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+
+  .logo {
+    font-family: "DynaPuff", cursive;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 10px;
     @include flex;
-    background: linear-gradient(to right, $backColor1, $backColor2);
+  }
+  .location {
+    select {
+      color: $textWhite;
+      @include outline;
+    }
+    option {
+      @include outline;
+    }
+  }
+  .search {
     color: $textWhite;
-    padding: 10px;
-    padding-left: 15%;
-    padding-right: 15%;
-    box-shadow: 0 20px 20px 0 rgba(0,0,0,.2);  
-
-    .logo{
-        font-size: 30px;
-        font-weight: bold;
-        @include flex;
+    input[type="search"],
+    button {
+      @include outline;
+      color: $textWhite;
     }
-    .location{
-        select{
-            color: $textWhite;
-            @include outline;
-        }
-        option{
-          @include outline
-         }
-     
-    
+    ::-webkit-input-placeholder {
+      color: $textWhite;
     }
-    .search{
-        color: $textWhite;
-        input[type=search],button{
-            @include outline;
-            color: $textWhite;
-        }
+  }
+  .language {
+    color: $textWhite;
+    select,
+    option {
+      color: $textWhite;
+      @include outline;
     }
-    .language{
-        color: $textWhite;
-        select,option{
-            color: $textWhite;
-            @include outline;
-        }
+  }
+  .login {
+    button {
+      color: $textWhite;
+      @include outline;
     }
-    .login{
-        button{
-            color: $textWhite;
-            @include outline;
-        }
+  }
+  .add {
+    button {
+      color: $textWhite;
+      @include outline;
     }
-    .add{
-        button{
-            color: $textWhite;
-            @include outline;
-        }
-    }
-    
+  }
 }
-

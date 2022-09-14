@@ -2,15 +2,47 @@
 
 .header{
     @include flex;
-    justify-content: space-around;
-    padding-left: 20%;
-    padding-right: 20%;
+    color: $textWhite;
+    gap: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: $textWhite;
-    background: #ef6191;
+    background: $backColor2;
+    margin-bottom: 5px;
+
+    @include box-shadow;
+
     a{
         text-decoration: none;
         color: $textWhite;
+    
     }
+}
+
+.cover{
+    @include flex;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 280px;
+    // filter: brightness(30%);
+    object-fit: cover;
+    background: $backColor1;
+    img{
+        width: 100%;
+        height: 280px;
+        filter: brightness(30%);
+        object-fit: cover;
+     
+    }
+    
+}
+.text{
+    font-size: 30px;
+    color: $textWhite;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
 }
