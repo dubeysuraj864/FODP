@@ -6,6 +6,11 @@ function Navbar() {
     return ( 
         <>
        <div className="main">
+        <div className="menu">
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+        </div>
         <div className="logo">FODP</div>
         <div className="location">
 
@@ -29,8 +34,8 @@ function Navbar() {
         </div>
 
         <div className="login"><button>Login</button></div>
-        <div className="add">
-            <button> <span className="plus"></span> Add Post</button>
+        <div className="add module module-border-wrap" >
+            <button > <span className="plus">+</span></button>
         </div>
 
        </div>

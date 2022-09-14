@@ -52,8 +52,70 @@
   }
   .add {
     button {
+      @include flex;
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
       color: $textWhite;
-      @include outline;
+      border: none;
+      outline: none;
+      border-radius: 50%;
+      border: 5px solid $backColor2;
+      background-color: rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    justify-content: space-between;
+  }
+  .menu {
+    .line1,
+    .line2,
+    .line3 {
+      width: 40px;
+      height: 5px;
+      background-color: #fff;
+      margin: 6px;
+      border-radius: 5px;
+    }
+    .line2 {
+      width: 30px;
+    }
+  }
+  .logo {
+    display: none;
+  }
+  .location {
+    margin: 0;
+  }
+  .search {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .language {
+    display: none;
+  }
+  .add {
+    color: $backColor2;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+
+    button {
+      border-radius: 50%;
+      font-size: 20px;
+      padding: 0;
+      position: absolute;
+      bottom: 10px;
+      left: calc(50% - 26px);
+      background: $backColor2;
+    }
+    .plus {
+      color: $backColor2;
     }
   }
 }

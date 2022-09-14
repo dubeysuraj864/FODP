@@ -20,8 +20,7 @@ function Header() {
         <div className="cover">
         
          <div className="text">
-            Are you looking for a partner or team members, whom you can play with? <br />
-            FODP is the right place, You should find'em here.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem temporibus expedita doloremque neque nulla esse! Esse magni unde voluptatem recusandae voluptates, illo dolorem, corporis obcaecati facere, sequi architecto aperiam fugiat.
          </div>
         </div>
         </>
